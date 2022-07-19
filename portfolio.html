@@ -57,16 +57,18 @@
         <!--Contacts-->
 
         <ul class="list contact-list">
-          <li>
-            <a class="header-link link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="header-link link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
+          <li class="contact-item">
+          <a class="header-link link" href="mailto:info@devstudio.com"><svg class="mail-icon">
+              <use href="./imges/icons.svg#email">Электронный адрес</use>
+            </svg>info@devstudio.com</use>
+            </svg></a>
+        </li>
+        <li>
+          <a class="header-link link" href="tel:+380961111111"><svg class="tel-icon">
+              <use href="./imges/icons.svg#smartphone">Электронный адрес</use>
+            </svg>info@devstudio.com</use>
+            </svg></a>
+        </li>
         </ul>
       </div>
     </header>
@@ -246,33 +248,62 @@
 
     <footer class="footer">
       <div class="conteiner footer-conteiner">
-        <a class="logo link" href="/"
-          >Web<span class="logo-white">Studio</span></a
-        >
 
+ <!--Footer contact-->
+
+      <div class="conteiner-contact">
+        <a class="logo link logo-footer" href="/">Web<span class="logo-white">Studio</span></a>
         <address class="address">
           <ul class="list">
             <li class="footer-item">
-              <a
-                class="link adress-item"
-                href="https://goo.gl/maps/bs3cHrX6vN8yE2N99"
-                target="_blank"
-                rel="noreferrer noopener"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
+              <a class="link adress-item" href="https://goo.gl/maps/bs3cHrX6vN8yE2N99" target="_blank"
+                rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a>
             </li>
             <li class="footer-item">
-              <a class="link footer-contact" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <a class="link footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li class="footer-item">
-              <a class="link footer-contact" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
+              <a class="link footer-contact" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
         </address>
+      </div>
+
+      <!--Footer social-->
+
+      <div class="conteiner-social">
+        <h3 class="footer-title">Присоединяйтесь</h3>
+        <ul class="list footer-social">
+          <li class="social-item">
+            <a class="link social-link" href="">
+              <svg class="social-icon" wight="20" height="20">
+                <use href="./imges/icons.svg#instagram">Instagram</use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="link social-link" href="" target="_blank" rel="noreferrer noopener" aria-label="twitter"><svg
+                class="social-icon" wight="20" height="20">
+                <use href="./imges/icons.svg#twitter">Twitter</use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="link social-link" href="" target="_blank" rel="noreferrer noopener" aria-label="twitter"><svg
+                class="social-icon" wight="20" height="20">
+                <use href="./imges/icons.svg#facebook">Facebook</use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="link social-link" href="" target="_blank" rel="noreferrer noopener" aria-label="twitter"><svg
+                class="social-icon" wight="20" height="20">
+                <use href="./imges/icons.svg#linkedin">Linkedin</use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
       </div>
     </footer>
   </body>
