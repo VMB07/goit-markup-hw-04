@@ -162,24 +162,22 @@ img {
 
 }
 
-.mail-icon:hover {
-fill: var(--accent-tx-cl);
+.mail-icon:hover,
+.mail-icon:focus {
+  fill: var(--accent-tx-cl);
 }
 
 .mail-icon {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
   fill: var(--grey-text-cl);
 }
 
-.tel-icon:hover {
-fill: var(--accent-tx-cl);
+.tel-icon:hover, 
+.tel-icon:focus {
+  fill: var(--accent-tx-cl);
 }
 
 .tel-icon {
-  width: 10px;
-  height: 16px;
   margin-right: 10px;
   fill: var(--grey-text-cl);
 }
@@ -202,7 +200,7 @@ fill: var(--accent-tx-cl);
 
 .hero {
   color: var(--white-text-cl);
-  background: rgba(47, 48, 58, 0.4);
+  background-color: rgba(47, 48, 58, 0.4);
   background-image: url(../imges/hero/bg-hero.jpg);
   background-repeat: no-repeat;
   padding-top: 200px;
@@ -265,12 +263,11 @@ fill: var(--accent-tx-cl);
 .conteiner-icon {
     display: flex;
     align-items: center;
-    width: 270px;
     justify-content: center;
     height: 120px;
     margin-bottom: 30px;
+    border-radius: 4px;
     background: var(--team-bg-cl);
-  
 }
 
 .priority-title {
@@ -305,6 +302,7 @@ fill: var(--accent-tx-cl);
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #fff;
 }
 
 .team-name {
@@ -329,38 +327,35 @@ fill: var(--accent-tx-cl);
   margin: 16px 30px 32px
 }
 
-.social:last-child {
-  margin: 0;
-}
-
 .social-item {
   
 }
-
-
 
 .social-link {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  outline: red;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 .social-icon {
-  width: 20px;
   fill: #AFB1B8;
 }
 
-.social-icon:hover {
-  fill: var(--white-text-cl);
+
+.social-link:hover {
+  background-color: var(--accent-tx-cl);
 }
 
 .social-link:hover .social-icon {
-  background-color: var(--accent-tx-cl);
+  fill: var(--white-text-cl);
 }
+
 
 /* Clients */
 
@@ -376,7 +371,8 @@ border-radius: 4px;
 padding: 16px 32px;
 }
 
-.clients-item:hover{
+.clients-item:hover,
+.clients-item:focus {
   border-color: #2196f3;
 }
 
@@ -446,7 +442,7 @@ padding: 16px 32px;
   color: var(--accent-tx-cl);
 }
 
-/* Footer contact */
+/* Footer social */
 
 .conteiner-social {
   display: flex;
@@ -468,18 +464,30 @@ padding: 16px 32px;
 .footer-social {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   gap: 10px;
 }
 
 .social-item {
 
 }
+.footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
 
+.footer-link:hover {
+  background-color: var(--accent-tx-cl);
+}
 
-.
-
-
+.footer-link:hover .social-icon {
+  fill: #FFFFFF;
+}
 
 
 /*Portfolio*/
@@ -552,18 +560,4 @@ padding: 16px 32px;
 .portfolio-text {
   font-size: 16px;
   line-height: calc(30 / 16);
-}
-
-/*Social ickons*/
-
-.social {
-
-}
-
-.social-item {
-
-}
-
-.social-link {
-
 }
