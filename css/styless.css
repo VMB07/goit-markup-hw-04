@@ -200,7 +200,7 @@ img {
 
 .hero {
   color: var(--white-text-cl);
-  background-color: rgba(47, 48, 58, 0.4);
+  background: linear-gradient rgba(47, 48, 58, 0.4);
   background-image: url("../images/hero/bg-hero.jpg");
   background-repeat: no-repeat;
   padding-top: 200px;
@@ -208,6 +208,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  linear-gra
 }
 
 
